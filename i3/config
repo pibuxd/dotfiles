@@ -5,10 +5,9 @@ font pango:monospace 8
 # monitor setup
 exec python /home/pibu/.config/i3/smart-monitors.py
 
-exec xrandr --output HDMI1 --primary --mode 1920x1080 --rate 120 --right-of eDP1
-exec xrandr --output eDP1 --mode 1920x1080 --rate 60 --left-of HDMI1
+#exec xrandr --output HDMI1 --primary --mode 1920x1080 --rate 120 --right-of eDP1
+#exec xrandr --output eDP1 --mode 1920x1080 --rate 60 --left-of HDMI1
 
-#font pango:DejaVu Sans Mono 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -171,7 +170,7 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color       
 # polybar
 exec_always --no-startup-id /home/pibu/.config/polybar/launch.sh
 # set time
-sudo ntpd -qg
+exec sudo ntpd -qg
 
 #exec_always feh --bg-fill /home/pibu/Downloads/macos.jpg
 #exec_always compton -m 0.95 -i 0.95 -o 0.95 -m 0.95
