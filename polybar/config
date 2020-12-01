@@ -139,7 +139,7 @@ label = %percentage_used%%
 [module/pacman-updates]
 type = custom/script
 exec = sudo pacman -Sy >&- && sudo pacman -Qu | wc -l
-interval = 3600
+interval = 2000
 label = %output%
 format.forground = ${colors.foreground}
 format.background = ${colors.backgroun}
@@ -164,22 +164,11 @@ format-underline = #9f7dd4
 label = %date% %time%
 
 [module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = #509cb3
-format-warn = <ramp> <label-warn>
-format-warn-underline = #ac5050
-
-label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = #ac5050
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+type = custom/script
+exec = sensors | sed -rn 's/.*Package id 0:\s+.([0-9]+).*/\1/p'
+format-suffix = °C
+format-underline = #ac5050
+label = %output%
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]

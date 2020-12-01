@@ -2,7 +2,7 @@ set $mod Mod4
 
 font pango:monospace 8
 
-# monitor setup
+# MY monitor setup
 exec python /home/pibu/.config/i3/smart-monitors.py
 
 #exec xrandr --output HDMI1 --primary --mode 1920x1080 --rate 120 --right-of eDP1
@@ -84,6 +84,7 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# workspaces
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -172,8 +173,11 @@ exec_always --no-startup-id /home/pibu/.config/polybar/launch.sh
 # set time
 exec sudo ntpd -qg
 
+# wallpaper
 #exec_always feh --bg-fill /home/pibu/Downloads/macos.jpg
+
+# transparent
 #exec_always compton -m 0.95 -i 0.95 -o 0.95 -m 0.95
 
-# keymap
+# MY keymap
 exec xmodmap .Xmodmap
