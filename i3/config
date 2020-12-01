@@ -5,6 +5,9 @@ font pango:monospace 8
 # MY monitor setup
 exec python /home/pibu/.config/i3/smart-monitors.py
 
+# take a screenshot (maim + xclip)
+bindsym $mod+Shift+s exec maim -s | xclip -selection clipboard -t image/png
+
 #exec xrandr --output HDMI1 --primary --mode 1920x1080 --rate 120 --right-of eDP1
 #exec xrandr --output eDP1 --mode 1920x1080 --rate 60 --left-of HDMI1
 
@@ -34,7 +37,7 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu
+# start dmenu, but rofi (better)
 bindsym $mod+d exec rofi -show run -lines 6 -eh 2 -width 30 -padding 0 -opacity 0.5 -terminal st
 
 # change focus
@@ -175,9 +178,6 @@ exec sudo ntpd -qg
 
 # wallpaper
 #exec_always feh --bg-fill /home/pibu/Downloads/macos.jpg
-
-# transparent
-#exec_always compton -m 0.95 -i 0.95 -o 0.95 -m 0.95
 
 # MY keymap
 exec xmodmap .Xmodmap
