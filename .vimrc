@@ -1,3 +1,5 @@
+# you need to install Vudle plugin manager
+
 set nocompatible
 filetype off
 filetype plugin indent on
