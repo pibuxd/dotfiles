@@ -3,7 +3,7 @@ set $mod Mod4
 font pango:monospace 8
 
 # MY monitor setup
-exec python /home/pibu/.config/i3/smart-monitors.py
+exec python3 $HOME/.config/i3/smart-monitors.py
 
 # take a screenshot (maim + xclip)
 bindsym $mod+Shift+s exec maim -s | xclip -selection clipboard -t image/png
@@ -172,12 +172,13 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color       
 
 
 # polybar
-exec_always --no-startup-id /home/pibu/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # set time
 exec sudo ntpd -qg
 
 # wallpaper
-#exec_always feh --bg-fill /home/pibu/Downloads/macos.jpg
+#exec_always feh --bg-fill $HOME/Downloads/macos.jpg
 
 # MY keymap
 exec xmodmap .Xmodmap

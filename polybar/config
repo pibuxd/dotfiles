@@ -9,7 +9,7 @@ primary = #9f7dd4
 secondary = #e60053
 alert = #bd2c40
 
-[bar/example]
+[bar/mainbar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 19
