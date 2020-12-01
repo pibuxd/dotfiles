@@ -2,6 +2,7 @@
 tested on Arch btw
 
 ## dependiences
+### for window manager config
 + rofi
 + maim
 + xclip
@@ -9,3 +10,7 @@ tested on Arch btw
 + alacritty
 + polybar
 + feh
+
+### rest
++ alacritty
++ zsh + oh-my-zsh 
