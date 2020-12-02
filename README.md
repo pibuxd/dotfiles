@@ -1,6 +1,6 @@
 # dotfiles
 tested on the Arch btw
-
++ don't use my keyboard layout, because mine is unique
 ## dependiences
 ### for the window manager (i3 + polybar)
 + rofi
