@@ -20,5 +20,5 @@
 + vim + vundle (it installs plugins)
 + font Jet Brains Mono Regular
 ## + the rest are installed after installing the Arch
-## screenshoot
+### screenshoot
 ![photo.png](photo.png)
