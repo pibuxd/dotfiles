@@ -19,6 +19,6 @@
 + zsh + oh-my-zsh + plugins
 + vim + vundle (it installs plugins)
 + font Jet Brains Mono Regular
-## + the rest are installed after installing the Arch
+## + the rest are installed default after installing the Arch
 ### screenshoot
 ![photo.png](photo.png)
