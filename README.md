@@ -20,5 +20,6 @@ tested on the Arch btw
 + vim + vundle (it installs plugins)
 + font Jet Brains Mono Regular
 
-### the rest are installed after installing the Arch
+## the rest are installed after installing the Arch
+### screenshot
 ![photo.png](photo.png)
