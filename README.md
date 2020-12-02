@@ -2,7 +2,7 @@
 tested on Arch btw
 
 ## dependiences
-### for window manager config (i3 and polybar)
+### for the window manager config (i3 + polybar)
 + rofi
 + maim
 + xclip
@@ -10,8 +10,14 @@ tested on Arch btw
 + alacritty
 + polybar
 + feh
++ xset
++ nvidia-settings
++ fonts -> Jet Brains Mono (Regular, Medium) + Font Awesome 5 Free
 
-### rest
+### the terminal side
 + alacritty
-+ zsh + oh-my-zsh 
-+ vim
++ zsh + oh-my-zsh + plugins
++ vim + vundle (it install plugins)
++ font Jet Brains Mono Regular
+
+### the rest are installed after installing the Arch
