@@ -1,8 +1,8 @@
 # dotfiles
-tested on Arch btw
+tested on the Arch btw
 
 ## dependiences
-### for the window manager config (i3 + polybar)
+### for the window manager (i3 + polybar)
 + rofi
 + maim
 + xclip
