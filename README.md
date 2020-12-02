@@ -21,5 +21,5 @@ tested on the Arch btw
 + font Jet Brains Mono Regular
 
 ## the rest are installed after installing the Arch
-### screenshot
+### screenshoot
 ![photo.png](photo.png)
