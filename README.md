@@ -13,12 +13,13 @@
 + feh
 + xset
 + nvidia-settings
-+ fonts -> Jet Brains Mono (Regular, Medium) + Font Awesome 5 Free
++ fonts -> JetBrains Mono (Regular, Medium) + Font Awesome 5 Free (it can be changed to Nerd Font)
 ### the terminal side
 + alacritty
 + zsh + oh-my-zsh + plugins
 + vim + vundle (it installs plugins)
-+ font Jet Brains Mono Regular
++ font JetBrains Mono Regular
++ lf (file manager)
 ## + the rest are installed default after installing the Arch
 ### screenshoot
 ![photo.png](photo.png)
