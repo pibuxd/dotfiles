@@ -1,4 +1,4 @@
-# dotfiles
+# DOTFILES
 #### comments
 + tested on the Arch btw
 + don't use my keyboard layout, because mine is unique
