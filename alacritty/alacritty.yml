@@ -27,11 +27,24 @@ colors:
     cyan:    '0x56b6c2'
     white:   '0xffffff'
 
+# Font
 font:
   normal:
     family: JetBrains Mono
-    style: Medium
-    size: 12
+    style:  Regular
+    size:   10
     offset:
-      x: -1
-      y: -1
+      x:  -1
+      y:  -1
+
+# Cursor
+cursor:
+  text:   '#191919'
+  cursor: '#d8dee9'
+  style:  Beam
+  vi_mode_style: Block
+  unfocused_hollow: true
+
+vi_mode_cursor:
+  text:   CellBackground
+  cursor: CellForeground
