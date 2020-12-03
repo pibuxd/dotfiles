@@ -188,5 +188,9 @@ exec sudo ntpd -qg
 # keyboard rate and delay
 exec xset r rate 200 30
 
+# autoscrolling
+exec xinput set-prop 14 "libinput Scroll Method Enabled" 0, 0, 1
+exec xinput set-prop 14 "libinput Button Scrolling Button" 2
+
 # MY keymap
 exec xmodmap .Xmodmap
