@@ -2,7 +2,7 @@
 ### comments
 + xorg is necessary
 + my keyboard layout (.Xmodmap) is unique
-##  dependiences
+## dependiences
 ### for the window manager (i3 + polybar)
 + i3 or i3-gaps
 + polybar
