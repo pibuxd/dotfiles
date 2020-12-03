@@ -1,19 +1,20 @@
 # DOTFILES
 #### comments
-+ tested on the Arch btw
-+ don't use my keyboard layout, because mine is unique
++ xorg is necessary
++ my keyboard layout (.Xmodemap) is unique
 ## dependiences
 ### for the window manager (i3 + polybar)
++ i3 or i3-gaps
++ polybar
 + rofi
 + maim
 + xclip
 + ntdp
 + alacritty
-+ polybar
 + feh
 + xset
 + nvidia-settings
-+ fonts -> JetBrains Mono (Regular, Medium) + Font Awesome 5 Free (it can be changed to Nerd Font)
++ fonts -> JetBrains Mono Medium + ![Font Awesome 5 Free](https://fontawesome.com) (it can be changed to Nerd Font, also in configs)
 + xfce4-power-manager
 ### the terminal side
 + alacritty
@@ -21,6 +22,5 @@
 + vim + vundle (it installs plugins)
 + font JetBrains Mono Regular
 + lf (file manager)
-## + the rest are installed default after installing the Arch
-### screenshoot
+### how it looks like
 ![photo.png](photo.png)
