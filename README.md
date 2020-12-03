@@ -14,7 +14,7 @@
 + feh
 + xset
 + nvidia-settings
-+ fonts -> JetBrains Mono Medium + ![Font Awesome 5 Free](https://fontawesome.com) (it can be changed to Nerd Font, also in configs)
++ fonts -> JetBrains Mono Medium + [Font Awesome 5 Free](https://fontawesome.com) (it can be changed to Nerd Font, also in configs)
 + xfce4-power-manager
 ### the terminal side
 + alacritty
