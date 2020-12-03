@@ -1,5 +1,5 @@
 # DOTFILES
-#### comments
+### comments
 + xorg is necessary
 + my keyboard layout (.Xmodmap) is unique
 ## dependiences
