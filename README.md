@@ -14,13 +14,13 @@
 + feh
 + xset
 + nvidia-settings
-+ fonts -> JetBrains Mono Medium + [Font Awesome 5 Free](https://fontawesome.com) (it can be changed to [Nerd Font](https://www.nerdfonts.com/), also in configs)
++ fonts -> [JetBrains Mono Medium](https://www.jetbrains.com/lp/mono/) + [Font Awesome 5 Free](https://fontawesome.com) (it can be changed to [Nerd Font](https://www.nerdfonts.com/), also in configs)
 + xfce4-power-manager
 ### the terminal side
 + alacritty
 + zsh + oh-my-zsh + plugins
 + vim + vundle (it installs plugins)
-+ font JetBrains Mono Regular
++ font ([JetBrains Mono Regular](https://www.jetbrains.com/lp/mono/)
 + lf (file manager)
 ### how it looks like
 ![photo.png](photo.png)
