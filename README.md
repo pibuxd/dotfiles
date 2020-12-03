@@ -1,4 +1,4 @@
-<h1>DOTFILES<h1>
+# DOTFILES
 ### comments
 + xorg is necessary
 + my keyboard layout (.Xmodmap) is unique
