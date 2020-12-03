@@ -14,6 +14,7 @@
 + xset
 + nvidia-settings
 + fonts -> JetBrains Mono (Regular, Medium) + Font Awesome 5 Free (it can be changed to Nerd Font)
++ xfce4-power-manager
 ### the terminal side
 + alacritty
 + zsh + oh-my-zsh + plugins
