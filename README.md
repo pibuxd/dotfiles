@@ -1,7 +1,7 @@
 # DOTFILES
 #### comments
 + xorg is necessary
-+ my keyboard layout (.Xmodemap) is unique
++ my keyboard layout (.Xmodmap) is unique
 ## dependiences
 ### for the window manager (i3 + polybar)
 + i3 or i3-gaps
@@ -14,7 +14,7 @@
 + feh
 + xset
 + nvidia-settings
-+ fonts -> JetBrains Mono Medium + [Font Awesome 5 Free](https://fontawesome.com) (it can be changed to Nerd Font, also in configs)
++ fonts -> JetBrains Mono Medium + [Font Awesome 5 Free](https://fontawesome.com) (it can be changed to [Nerd Font](https://www.nerdfonts.com/), also in configs)
 + xfce4-power-manager
 ### the terminal side
 + alacritty
