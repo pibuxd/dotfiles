@@ -23,4 +23,4 @@
 + font [JetBrains Mono Regular](https://www.jetbrains.com/lp/mono/)
 + lf (file manager)
 ### how it looks like
-![photo.png](photo.png)
+![photo.png](screenshoot.png)
