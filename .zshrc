@@ -13,6 +13,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # aliases
+alias h='htop'
+alias install='sudo pacman -S'
+alias remove='sudo pacman -Rsu'
+alias boost='sudo pacman -Syyu'
 #alias ls='lsd'
 #alias l='ls -l'
 #alias la='ls -a'
@@ -29,8 +33,8 @@ zstyle :compinstall filename '/home/pibu/.zshrc'
 autoload -Uz compinit
 compinit
 
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export TERM=xterm-256color
+export EDITOR="vim"
 export PATH=/home/pibu/.local/bin/:$PATH

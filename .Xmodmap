@@ -1,12 +1,14 @@
 clear lock
-clear mod4
-remove shift	=	Shift_R
 clear mod5
-remove mod1	=	Alt_R
-remove control 	=	Control_R
-keycode 108	=	Left
-keycode 62	=	Up
-keycode 134	=	Down
-keycode 105	=	Right
-keycode 66	=	Alt_L
-keycode 64	=	Alt_R
+clear mod1
+remove mod4     = Super_R
+remove shift    =	Shift_R
+remove control  =	Control_R
+keycode 108	    =	Left
+keycode 62	    =	Up
+keycode 134	    =	Down
+keycode 105	    =	Right
+keycode 66	    =	Alt_L Meta_L
+!keycode 64      = ISO_Level3_Shift
+!add mod1        = ISO_Level3_Shift Mode_switch
+!add lock        = Alt_L Meta_L
