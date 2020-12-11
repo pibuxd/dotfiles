@@ -169,6 +169,8 @@ client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #2f343f
 client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color          #2f343f
 
+# notification center
+
 # power settings
 exec_always --no-startup-id xfce4-power-manager
 
@@ -190,3 +192,6 @@ exec xinput set-prop 14 "libinput Button Scrolling Button" 2
 
 # MY keymap
 exec xmodmap .Xmodmap
+
+# increase scrolling
+exec imwheel .imwheelrc
