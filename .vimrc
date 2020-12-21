@@ -66,6 +66,9 @@ Plugin 'mg979/vim-visual-multi'
 Plugin 'puremourning/vimspector'
 Plugin 'szw/vim-maximizer'
 
+" Discord presence
+"Plugin 'hugolgst/vimsence'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -125,6 +128,15 @@ nnoremap <F5> :UndotreeToggle<CR>
 " ==== VISUALS
 colorscheme one
 let g:one_allow_italics = 1 " I love italic for comments"
+
+" === RICH PRESENCE
+"let g:vimsence_small_text = 'Vim'
+"let g:vimsence_small_image = 'vim'
+"let g:vimsence_editing_details = 'Editing: {}'
+"let g:vimsence_editing_state = 'Working on: {}'
+"let g:vimsence_file_explorer_text = 'In NERDTree'
+"let g:vimsence_file_explorer_details = 'Looking for files'
+"let g:vimsence_custom_icons = {'filetype': 'iconname'}
 
 " ==== KITE
 let g:kite_supported_languages = ['*']

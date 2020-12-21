@@ -195,3 +195,6 @@ exec xmodmap .Xmodmap
 
 # increase scrolling
 exec imwheel .imwheelrc
+
+# hinting in GTK
+exec xsettingsd

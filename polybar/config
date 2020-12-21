@@ -42,7 +42,7 @@ font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = i3
 modules-center = xwindow
-modules-right = xbacklight pacman-updates volume battery memory cpu temperature date powermenu
+modules-right = xbacklight pacman-updates timetable volume battery memory cpu temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -180,10 +180,18 @@ format-prefix = " "
 format-prefix-foreground = #ffbb00
 # format-prefix-background = #ffbb00
 
+[module/timetable]
+type = custom/script
+exec = sh /home/$USER/.config/polybar/lessons.sh
+interval = 60
+label = %output%
+format-prefix = " "
+format-prefix-foreground = #ffbb00
+click-left = sh /home/$USER/.config/polybar/show_lessons.sh
+
 [module/date]
 type = internal/date
 interval = 5
-
 date =
 date-alt = " %Y-%m-%d"
 
