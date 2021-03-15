@@ -7,7 +7,9 @@ plugins=(
 	colored-man-pages	        
 	zsh-autosuggestions	    
 	zsh-syntax-highlighting	        
-	zsh-z		
+	zsh-z
+  zsh-256color
+	calc
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -16,10 +18,14 @@ source $ZSH/oh-my-zsh.sh
 unsetopt prompt_cr prompt_sp
 
 # aliases
-alias h='htop'
-alias install='sudo pacman -S'
-alias remove='sudo pacman -Rsu'
-alias boost='sudo pacman -Syyu'
+alias ser='yay -Ss'
+alias cl='clear'
+alias ht='htop'
+alias ins='yay -S'
+alias rem='yay -Rsu'
+alias upd='yay -Syyu'
+alias exi='yay -Q'
+alias lsa='ls -a'
 #alias ls='lsd'
 #alias l='ls -l'
 #alias la='ls -a'
@@ -40,4 +46,4 @@ compinit
 
 export TERM=xterm-256color
 export EDITOR="vim"
-export PATH=$HOME/.local/bin/:$HOME/v:$PATH
+export PATH=$HOME/.local/bin/:$HOME/go/bin/:$PATH

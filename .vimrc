@@ -36,7 +36,8 @@ Plugin 'preservim/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 
 " Go
-Plugin 'tweekmonster/gofmt.vim'
+"Plugin 'tweekmonster/gofmt.vim'
+"Plugin 'fatih/vim-go'
 
 " line
 Plugin 'vim-airline/vim-airline'
@@ -70,7 +71,6 @@ Plugin 'szw/vim-maximizer'
 "Plugin 'hugolgst/vimsence'
 
 call vundle#end()
-filetype plugin indent on
 
 
 " ==== NERDTREE
@@ -156,6 +156,7 @@ set cmdheight=2
 set noshowmode
 set mouse=ar
 set ruler
+set number
 
 " Brief HELP
 " :PluginList       - lists configured plugins
