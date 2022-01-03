@@ -7,16 +7,16 @@ set encoding=UTF-8
 " === TRUECOLORS
 if (empty($TMUX))
   if (has("nvim"))
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   endif
   if (has("termguicolors"))
     set termguicolors
   endif
 endif
 
-execute "set t_8f=\e[38;2;%lu;%lu;%lum"
-execute "set t_8b=\e[48;2;%lu;%lu;%lum"
-
+set t_8b=^[[48;2;%lu;%lu;%lum
+set t_8f=^[[38;2;%lu;%lu;%lum
+set termguicolors
 
 " PLUGINS Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -63,12 +63,11 @@ Plugin 'jiangmiao/auto-pairs'
 " multi cursor
 Plugin 'mg979/vim-visual-multi'
 
-" debugging
-Plugin 'puremourning/vimspector'
+" debugging Plugin
 Plugin 'szw/vim-maximizer'
 
-" Discord presence
-"Plugin 'hugolgst/vimsence'
+" fonts
+Plugin 'lambdalisue/nerdfont.vim'
 
 call vundle#end()
 
@@ -83,12 +82,12 @@ let g:NERDTreeDirArrows=0
 nnoremap <F2> :NERDTreeToggle <CR>
 
 " ==== SYNTASTIC
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 " ==== DEBUGER REMAPS
 nnoremap <leader>m :MaximizerToggle!<CR>
@@ -129,27 +128,13 @@ nnoremap <F5> :UndotreeToggle<CR>
 colorscheme one
 let g:one_allow_italics = 1 " I love italic for comments"
 
-" === RICH PRESENCE
-"let g:vimsence_small_text = 'Vim'
-"let g:vimsence_small_image = 'vim'
-"let g:vimsence_editing_details = 'Editing: {}'
-"let g:vimsence_editing_state = 'Working on: {}'
-"let g:vimsence_file_explorer_text = 'In NERDTree'
-"let g:vimsence_file_explorer_details = 'Looking for files'
-"let g:vimsence_custom_icons = {'filetype': 'iconname'}
-
-" ==== KITE
-let g:kite_supported_languages = ['*']
-let g:kite_tab_complete=1
-set completeopt+=menuone
 set completeopt+=noselect
-
 set background=dark
 set exrc
 set autoindent
-set tabstop=2
+set tabstop=1
+set shiftwidth=1
 set expandtab
-set shiftwidth=2
 set autowrite
 set smartindent
 set cmdheight=2
@@ -157,6 +142,10 @@ set noshowmode
 set mouse=ar
 set ruler
 set number
+set noswapfile " disable the swapfile
+set hlsearch " highlight all results
+set ignorecase " ignore case in search
+set incsearch " "show search results as you type
 
 " Brief HELP
 " :PluginList       - lists configured plugins
